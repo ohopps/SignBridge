@@ -205,7 +205,5 @@ try:
 except Exception as e:
     st.error(f"Error: {e}")
 finally:
-    # We do NOT release the vision_system here because Streamlit re-runs scripts on every interaction.
-    # Releasing it would break the camera feed permanently.
     pass
 

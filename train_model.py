@@ -15,7 +15,6 @@ else:
     MODEL_FILE = 'gesture_model_left.pkl'
 
 # Dictionary mapping numeric labels to human-readable signs
-# Update this based on the signs Alicia chooses to record
 LABEL_MAP = {
     0: 'Help',
     1: 'Pain',
