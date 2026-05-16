@@ -8,14 +8,23 @@ SignBridge is an AI-powered healthcare communication assistant designed for deaf
 - **🚨 Emergency Detection:** Specific gestures (like 'Help', 'Pain') automatically trigger high-contrast red UI alerts and loud auditory warnings.
 - **♿ Accessibility First:** High-contrast UI, colorblind-friendly palettes, and large typography built with Streamlit.
 
+## Prerequisites
+
+Before running this project, anyone downloading it MUST have the following software installed on their computer:
+
+1. **[Python (Version 3.9 or higher)](https://www.python.org/downloads/)**: When installing Python on Windows, make sure to check the box that says **"Add Python to PATH"** on the very first installation screen.
+2. **A working Webcam & Microphone**: Required for gesture detection and speech recognition.
+
 ## Setup Instructions
 
-1. Install the required Python libraries:
+1. **Download the Code**: Click the green `<> Code` button at the top of this GitHub page and select **"Download ZIP"**. Extract the ZIP file to a folder on your computer.
+2. **Open a Terminal**: Open Command Prompt or PowerShell, and navigate to the folder where you extracted the code.
+3. **Install the required libraries**: Run the following command to download all the AI models and modules required:
 ```bash
 pip install -r requirements.txt
 ```
 
-2. Run the application:
+4. **Run the Application**: 
 ```bash
 streamlit run app.py
 ```
