@@ -35,11 +35,11 @@ LABEL_MAP = {
     15: 'Vomit',
     16: 'Fever',
     17: 'Dizzy',
-    19: 'Cold',
-    20: 'Weak',
-    22: 'Appointment',
-    23: 'Wheelchair',
-    25: 'Allergy'
+    18: 'Cold',
+    19: 'Weak',
+    20: 'Appointment',
+    21: 'Wheelchair',
+    22: 'Allergy'
 }
 
 def train_model():

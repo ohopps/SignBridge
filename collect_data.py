@@ -38,10 +38,10 @@ detector = vision.HandLandmarker.create_from_options(options)
 # Define our labels. For example:
 # 0: Help, 1: Pain, 2: Yes, 3: No, 4: Doctor, 5: Thank You
 print("--- Data Collection Started ---")
-print("Press '0'-'9' or 'a'-'p' to save a frame for a specific gesture.")
+print("Press '0'-'9' or 'a'-'m' to save a frame for a specific gesture.")
 print("0:Help, 1:Pain, 2:Yes, 3:No, 4:Doctor, 5:Thank You, 6:Water, 7:Toilet, 8:Emergency, 9:Medicine")
-print("a:Headache, b:Flu, c:Cough, d:Diarrhea, e:Stomach Ache, f:Vomit, g:Fever, h:Dizzy")
-print("j:Cold, k:Weak, m:Appointment, n:Wheelchair, p:Allergy")
+print("a:Headache, b:Flu, c:Cough, d:Diarrhea, e:Stomach Ache, f:Vomit, g:Fever, h:Dizzy, i:Cold")
+print("j:Weak, k:Appointment, l:Wheelchair, m:Allergy")
 print("Press 'q' to quit.")
 
 # Initialize CSV file with headers if it doesn't exist
@@ -120,7 +120,7 @@ while cap.isOpened():
     label = None
     if ord('0') <= key <= ord('9'):
         label = int(chr(key))
-    elif ord('a') <= key <= ord('p'):
+    elif ord('a') <= key <= ord('m'):
         label = key - ord('a') + 10
         
     if label is not None:
