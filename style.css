@@ -1,0 +1,137 @@
+/* Global styling for Elderly & Accessibility */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800;900&display=swap');
+
+html, body, [class*="css"]  {
+    font-family: 'Inter', sans-serif;
+    font-size: 18px !important; /* Larger text for readability */
+}
+
+h1 { font-size: 2.5rem !important; }
+h2 { font-size: 2rem !important; }
+h3 { font-size: 1.5rem !important; }
+p, label, .stRadio label { font-size: 1.2rem !important; }
+
+/* Subtitle Container - High Contrast */
+.subtitle-container {
+    background: #000000; /* Solid black for max contrast */
+    border-radius: 12px;
+    padding: 20px;
+    margin-top: -80px; 
+    position: relative;
+    z-index: 10;
+    text-align: center;
+    border: 3px solid #fbbf24; /* Thick amber border */
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.8);
+    min-height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.subtitle-text {
+    font-size: 40px; /* Extremely large */
+    font-weight: 900;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Emergency Mode - High Contrast / Colorblind Safe */
+.emergency-subtitle {
+    border-color: #ef4444 !important;
+    background: #450a0a !important; /* Dark red */
+    border-width: 6px !important;
+}
+
+.emergency-subtitle .subtitle-text {
+    color: #fef08a !important; /* Bright yellow on dark red is highly visible */
+}
+
+/* History Log Styling */
+.history-container {
+    background: #1e293b;
+    border-radius: 12px;
+    padding: 20px;
+    border: 2px solid #334155;
+    height: 400px;
+    overflow-y: auto;
+}
+
+.log-entry {
+    background: #0f172a;
+    border-left: 6px solid #fbbf24; /* Thick colorblind-safe accent */
+    padding: 15px;
+    margin-bottom: 12px;
+    border-radius: 6px;
+    font-size: 20px; /* Large history text */
+    font-weight: 600;
+    color: #f8fafc;
+}
+
+/* Button Styling */
+.stButton button {
+    border: none;
+    border-radius: 8px;
+    padding: 20px 30px;
+    font-size: 22px !important;
+    font-weight: 800;
+    transition: all 0.3s ease;
+}
+
+.stButton button[kind="primary"] {
+    background: #2dd4bf !important; /* Active teal */
+    color: #000000 !important;
+    box-shadow: 0 0 20px rgba(45, 212, 191, 0.5) !important;
+    transform: scale(1.02);
+}
+
+.stButton button[kind="secondary"] {
+    background: #1e293b !important; /* Dim slate */
+    color: #94a3b8 !important;
+    border: 2px solid #334155 !important;
+}
+
+/* Active / Inactive States for Subtitles */
+.active-turn-box {
+    opacity: 1.0 !important;
+    transform: scale(1.02);
+    transition: all 0.3s ease;
+}
+
+.inactive-turn-box {
+    opacity: 0.3 !important;
+    transform: scale(0.98);
+    transition: all 0.3s ease;
+    filter: grayscale(50%);
+}
+
+/* Doctor Speech Subtitle Box */
+.doctor-subtitle-container {
+    background: #1e3a8a; /* Deep blue to distinguish from black patient box */
+    border-radius: 12px;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 3px solid #60a5fa; /* Light blue border */
+    box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 80px;
+}
+
+.doctor-subtitle-label {
+    color: #93c5fd;
+    font-size: 16px !important;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    align-self: flex-start;
+}
+
+.doctor-subtitle-text {
+    font-size: 32px !important;
+    font-weight: 800;
+    color: #ffffff;
+    text-align: center;
+}

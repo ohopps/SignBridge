@@ -1,0 +1,19 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# MediaPipe model (this is downloaded automatically by the script)
+hand_landmarker.task
+
+# Virtual environments
+venv/
+env/
+.env/
+
+# IDE files
+.vscode/
+.idea/
+
+# Note: gesture_model_left.pkl, gesture_model_right.pkl, and the CSV datasets
+# are small enough to upload to GitHub, so we are keeping them so others can run your code out of the box!
